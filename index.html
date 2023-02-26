@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	{
+		box-sizing: border-box;
+	}
+	
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	@media (max-width: 600px) {
+		form {
+			width: 100%;
+		}
+	}
+	
+	form {
+		border: 2px solid #ccc;
+		background-color: #f2f2f2;
+		padding: 20px;
+		margin: 0 auto;
+		max-width: 600px;
+	}
+	
+	input[type=text], input[type=email], input[type=tel], input[type=date] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	
+	input[type=checkbox] {
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
+	
+	button[type=submit] {
+		background-color: powderblue;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		width: 80%;
+		margin-left: 55px;
+		margin-top: 35px;
+	}
+	
+	button[type=submit]:hover {
+		background-color: #45a049;
+	}
+	
+	.container {
+		padding: 16px;
+	}
+.radio{
+    margin-left: 100px;
+  } 
+	h1 {
+		margin-left: 400px;
+	}
+	</style>
+</head>
+<body>
+
+	<h1>Student Record System</h1>
+
+	<form>
+		<div class="container">
+			<label for="name"><b>Student id</b></label>
+			<input type="text" placeholder="Enter id" name="name" required>
+
+			<label for="email"><b>Name</b></label>
+			<input type="email" placeholder="Enter Name" name="email" required> <br><br>
+
+            <label for="name"><b>Gender: </b></label><br><br>
+      <div class="radio">
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male\t">Male &emsp;</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female &emsp;</label>
+      <input type="radio" id="others" name="gender" value="others">
+      <label for="others">Others</label><br>
+      </div>
+
+
+      <br><label for="name"><b>Password</b></label>
+      <input type="text" placeholder="Enter Password" name="name" required>
+
+			<label for="gender"><b>Gender</b></label>
+			<br>
+			<input type="checkbox" name="gender" value="male">
+			<label for="gender">Male</label><br>
+			<input type="checkbox" name="gender" value="female">
+			<label for="gender">Female</label><br>
+			<input type="checkbox" name="gender" value="other">
+			<label for="gender">Other</label><br>
+
+			<button type="submit">Submit</button>
+		</div>
+	</form>
+
+</body>
+</html>

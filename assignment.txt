@@ -1,0 +1,1 @@
+integrates with hdfs and provide the same benefits for parallel data processing. 

@@ -1,0 +1,6 @@
+Attributes of a good software.
+	Functional: A software must be able to utilize it's core functionality for becoming a useful software.
+	
+	Robust: should be able to deal with failures.
+
+	should be measurable: 
